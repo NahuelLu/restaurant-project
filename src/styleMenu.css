@@ -1,0 +1,7 @@
+.img-container{
+    width: 50%;
+}
+.img-container img{
+    max-width: 100%;
+    height: auto;
+}
