@@ -17,7 +17,7 @@ function changeContent(e){
     setContent(menuLoad,e.currentTarget.id,'menu');
     setContent(contactLoad,e.currentTarget.id,'contact');
 }
-function setContent( funcLoad, currentId , id){
+function setContent(funcLoad ,currentId ,id){
     if(currentId === id){
         resetContent();
         funcLoad(content);
