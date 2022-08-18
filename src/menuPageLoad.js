@@ -3,9 +3,7 @@ import Pizza from './pizza.jpg';
 import Chicken from './pollo.webp';
 const Food = (nameFood,description,img,place)=>{
     const createOptionMenu = ()=>{
-        createTitleFood(nameFood,place);
         createImg(place,img);
-        createDescription(description,place);
     }
     const createImg = (place,image)=>{
         const imgContainer = document.createElement('div');
@@ -14,10 +12,12 @@ const Food = (nameFood,description,img,place)=>{
         imgContainer.className='img-container';
         img.src = image;
         imgContainer.appendChild(img);
+        createTitleFood(nameFood,imgContainer);
+        createDescription(description,imgContainer);
     }
     const createTitleFood=(name,place)=>{
         const titleFood = document.createElement('div');
-        place.appendChild(titleFood);
+        place.prepend(titleFood);
         titleFood.textContent=name;
         titleFood.className='item-food';
     }

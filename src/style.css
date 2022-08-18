@@ -14,11 +14,12 @@ body{
     flex-direction: column;
     height: 100%;
     flex:1;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     text-align: center;
     align-items: center;
     font-size:1.9rem;
+    row-gap: 30px;
 }
 a{
     text-decoration: none;

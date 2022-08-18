@@ -1,7 +1,12 @@
 .img-container{
     width: 50%;
+    border-radius: 10px;
 }
 .img-container img{
     max-width: 100%;
     height: auto;
+}
+.img-container:hover{
+    box-shadow: 5px 2px rgb(69, 50, 50);
+    border: 1px solid rgb(69, 50, 50);
 }
